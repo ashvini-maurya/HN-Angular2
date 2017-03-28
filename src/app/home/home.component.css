@@ -1,0 +1,25 @@
+md-toolbar{
+  background-color:#33b5e5;
+  color: #ffffff;
+  font-family: "Roboto Medium";
+}
+
+.toolbar-header-content {
+	margin: auto;
+}
+
+.news-content {
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: #e6e6e6;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+}
+
+.footer {
+	display: table;
+	margin: 0 auto;
+}
