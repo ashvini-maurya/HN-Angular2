@@ -1,1 +1,8 @@
-<p>Story #{{storyID}}</p>
+<div *ngIf="item">
+	<p>
+		<a href="{{item.url}}">
+			{{item.title}}
+		</a>
+		<!-- <span>{{item.url}}</span> -->
+	</p>
+</div>

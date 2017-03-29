@@ -19,4 +19,9 @@ export class HackernewsApiService {
   					.map(res => res.json());
   }
 
+  getStory(id: number): Observable<any> {
+  	return this.http.get(`${this.baseUrl}/item/${id}.json`)
+  					.map(res => res.json());
+  }
+
 }

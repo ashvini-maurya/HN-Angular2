@@ -11,13 +11,9 @@ import { HackernewsApiService } from '../hackernews-api.service';
 })
 
 export class HomeComponent implements OnInit {
-	// errorMessage: string;
-	// items: number[];
-	// mode: 'Observable'
 	items;
 
   constructor(private _hackernewsApiService: HackernewsApiService) { 
-  	// this.items = Array(30);
   }
 
   ngOnInit() {
