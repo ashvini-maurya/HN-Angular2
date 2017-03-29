@@ -27,8 +27,8 @@
 
 <div class="news-content">
 	<ol>
-		<li *ngFor="let item of items; let i = index">
-			<app-story storyID="{{i+1}}"></app-story>
+		<li *ngFor="let item of items | slice:0:30">
+			<app-story storyID="{{item}}"></app-story>
 			<hr>
 		</li>
 	</ol>

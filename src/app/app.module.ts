@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RoutingModule } from './app.routes';
 import { StoryComponent } from './story/story.component';
 
+import { HackernewsApiService } from './hackernews-api.service';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { StoryComponent } from './story/story.component';
     MaterialModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [HackernewsApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
