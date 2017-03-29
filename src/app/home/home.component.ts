@@ -7,7 +7,9 @@ import { Http } from '@angular/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+	errorMessage: string;
 	items: number[];
+	mode: 'Observable'
 
   constructor() { 
   	this.items = Array(30);
