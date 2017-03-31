@@ -23,3 +23,8 @@ md-toolbar{
 	display: table;
 	margin: 0 auto;
 }
+
+.more {
+	margin-left: 50px;
+	margin-right: 50px;
+}
