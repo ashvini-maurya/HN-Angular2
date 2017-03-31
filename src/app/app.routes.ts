@@ -3,12 +3,14 @@ import {NgModule} from '@angular/core';
 
 import { HomeComponent } from './home/home.component';
 import { StoryComponent } from './story/story.component';
+import { CommentsComponent } from './comments/comments.component';
 
 
 const routes: Routes = [
 	{path:'', redirectTo:'/home', pathMatch:'full'},
 	{path: 'home', component:HomeComponent},
-	{path: 'story', component:StoryComponent}
+	{path: 'story', component:StoryComponent},
+	{path: 'comments', component:CommentsComponent}
 ];
 
 

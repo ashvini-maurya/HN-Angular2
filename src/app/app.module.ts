@@ -12,6 +12,7 @@ import { RoutingModule } from './app.routes';
 import { StoryComponent } from './story/story.component';
 
 import { HackernewsApiService } from './hackernews-api.service';
+import { CommentsComponent } from './comments/comments.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HackernewsApiService } from './hackernews-api.service';
     AppComponent,
     HomeComponent,
     DashboardComponent,
-    StoryComponent
+    StoryComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
