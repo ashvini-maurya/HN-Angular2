@@ -1,4 +1,4 @@
-<div *ngIf="item">
+<!-- <div *ngIf="item">
 	<p>
 		<a href="{{item.url}}" target="_blank">
 			{{item.title}}
@@ -15,4 +15,33 @@
 	        </a>
         </span>
 	</p>
-</div>
+</div> -->
+
+
+
+
+
+<!-- <div> -->
+  <p>
+    <a href="{{item.url}}" target="_blank">
+		{{item.title}}
+	</a>
+    <span *ngIf="item.domain" class="domain">({{item.domain}})</span>
+  </p>
+  <div>
+    <span class="story-discussion">
+      {{item.points}} points |
+<!--     </span>
+    <span>
+      <span> --> 
+        <a href="">
+          <span *ngIf="item.comments_count !== 0">
+            {{item.comments_count}}
+            <span *ngIf="item.comments_count === 1">comment</span>
+            <span *ngIf="item.comments_count > 1">comments</span>
+          </span>
+        </a>
+      <!-- </span> -->
+    </span>
+  </div>
+<!-- </div> -->

@@ -7,15 +7,15 @@ import { HackernewsApiService } from '../hackernews-api.service';
   styleUrls: ['./story.component.css']
 })
 export class StoryComponent implements OnInit {
-  @Input() storyID: number;
+  @Input()
   item;
 
-  constructor(private _hackernewsApiService: HackernewsApiService) { }
+  constructor() { }
 
   ngOnInit() {
-   	this._hackernewsApiService.getStory(this.storyID).subscribe(data => {
-  						this.item = data
-  					}, error => console.log('Errror in loading story' + this.storyID));
+   	// this._hackernewsApiService.getStory(this.storyID).subscribe(data => {
+  		// 				this.item = data
+  		// 			}, error => console.log('Errror in loading story' + this.storyID));
   }
 
 }

@@ -17,7 +17,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-  	this._hackernewsApiService.getStories()
+    this.currentPage = 1
+  	this._hackernewsApiService.getStories('news', currentPage)
   					.subscribe(
   						items => this.items = items,
   						error => console.log('Error getting data from hackerNewsAPI'));

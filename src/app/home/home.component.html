@@ -25,9 +25,9 @@
 </md-toolbar>
 
 
-<div class="news-content">
+<!-- <div class="news-content">
 	<ol>
-		<li *ngFor="let item of items | slice:0:30">
+		<li *ngFor="let item of items">
 			<app-story storyID="{{item}}"></app-story>
 			<hr>
 		</li>
@@ -37,7 +37,28 @@
 
 </div>
 
-<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>
+<p class="error" *ngIf="errorMessage">{{errorMessage}}</p> -->
+
+
+
+
+
+<div *ngIf="items" class="news-content">
+  <ol>
+    <li *ngFor="let item of items">
+      <app-story [item]="item"></app-story>
+      <hr>
+    </li>
+  </ol>
+  <!-- <div class="nav"> -->
+    <a href="" class="more">
+      More ›
+    </a>
+  <!-- </div> -->
+</div>
+
+
+
 
 <br>
 <div class="footer">
