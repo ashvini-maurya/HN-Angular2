@@ -1,46 +1,55 @@
-<md-toolbar>
-	<div class="toolbar-heading-logo">
- 		HN
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Hacker News</a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li class="active"><a href="#">New</a></li>
+				<li class="active"><a href="#">Comments</a></li>
+				<li class="active"><a href="#">Shows</a></li>
+				<li class="active"><a href="#">Ask</a></li>
+				<li class="active"><a href="#">Jobs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="news-content">
+		<ol>
+			<li *ngFor="let item of items | slice:0:30">
+				<app-story storyID="{{item}}"></app-story>
+				<hr>
+			</li>
+		</ol>
+
+		<a href="" class="more">More</a>
+
 	</div>
 
-	<div class="toolbar-header-content">
-		<span>New</span>
-		<span>|</span>
+	<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>
 
-		<span>Comments</span>
-		<span>|</span>
-
-		<span>Shows</span>
-		<span>|</span>
-
-		<span>Ask</span>
-		<span>|</span>
-
-		<span>Jobs</span>
+	<br>
+	<div class="footer">
+	Made with <i class="material-icons" style="color: red">favorite</i> | Find Project on <a href="https://github.com/ashvinikumar/HN-Angular2" target="_blank">GitHub</a>
 	</div>
-
-	<div class="toolbar-heading-option">
- 		Save
-	</div>
-</md-toolbar>
+	<br>
 
 
-<div class="news-content">
-	<ol>
-		<li *ngFor="let item of items | slice:0:30">
-			<app-story storyID="{{item}}"></app-story>
-			<hr>
-		</li>
-	</ol>
-
-	<a href="" class="more">More</a>
-
-</div>
-
-<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>
-
-<br>
-<div class="footer">
-	Made with <i class="material-icons" style="color: red">favorite</i> | Find it on <a href="https://github.com/ashvinikumar/HN-Angular2" target="_blank">GitHub</a>
-</div>
-<br>
+</body>
+</html>

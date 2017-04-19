@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+// import { MaterialModule } from '@angular/material';
+// import {BrowserAnimationsModule} from '@angular/package-browser/animations';
+//import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -25,10 +27,12 @@ import { CommentsComponent } from './comments/comments.component';
   ],
   imports: [
     BrowserModule,
+    //BrowserAnimationsModule,
+    //NoopAnimationsModule,
     FormsModule,
     HttpModule,
     JsonpModule,
-    MaterialModule,
+    // MaterialModule,
     RoutingModule
   ],
   providers: [HackernewsApiService],
