@@ -3,6 +3,11 @@
   color: #ffffff;
   /*font-family: "Roboto Medium";*/
 }
+
+/*.navbar-collapse.in {
+	overflow-y: visible;
+}
+*/
 .active {
 	margin-left: 10px;
 }
