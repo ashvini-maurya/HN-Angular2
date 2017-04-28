@@ -23,4 +23,8 @@ export class HomeComponent implements OnInit {
 				error => console.log('Error getting data from hackerNewsAPI'));
   }
 
+  clickMe() {
+    alert("bookmark button clicked");
+  }
+
 }

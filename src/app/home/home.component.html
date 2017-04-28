@@ -44,22 +44,21 @@
 				<app-story storyID="{{item}}"></app-story>
 				
 				
-				<a href="http://twitter.com/home?status={{item}}" target="_blank" class="btn btn-social-icon btn-twitter" style="float: right; margin-top: -35px; margin-right: 50px;">
-					<span class="fa fa-twitter"></span>
+				<a href="http://twitter.com/home?status={{item}}" target="_blank" class="btn btn-social-icon" style="float: right; margin-top: -35px; margin-right: 70px;">
+					<span class="fa fa-twitter-square"></span>
 				</a>
   				
+				<div style="float: right; margin-top: -30px; margin-right: 50px;">
+				  <span class="fa fa-bookmark-o" (click)="clickMe()" aria-hidden="true"></span>
+				</div>
 
-				<hr>
+				<hr style="border-color: red">
 			</li>
 		</ol>
 		<a href="" class="more">More</a>
 	</div>
 
 	<!-- <p class="error" *ngIf="errorMessage">{{errorMessage}}</p> -->
-
-	
-	
-
 
 
 
