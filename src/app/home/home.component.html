@@ -37,16 +37,10 @@
 	</nav>
 
 
-
 	<div class="news-content">
 		<ol>
 			<li *ngFor="let item of items | slice:(30 * this.page_number):(30 * (this.page_number + 1))">
 				<app-story storyID="{{item}}"></app-story>
-				
-				
-				<a href="http://twitter.com/home?status={{item}}" target="_blank" class="btn btn-social-icon" style="float: right; margin-top: -35px; margin-right: 70px;">
-					<span class="fa fa-twitter-square"></span>
-				</a>
   				
 				<div style="float: right; margin-top: -30px; margin-right: 50px;">
 				  <span class="fa fa-bookmark-o" (click)="clickMe()" aria-hidden="true"></span>
@@ -58,9 +52,6 @@
 		<a class="more" (click)="incrementPageNumber()" >More</a>
 	</div>
 
-	<!-- <p class="error" *ngIf="errorMessage">{{errorMessage}}</p> -->
-
-
 
 	<br>
 	<div class="footer">
@@ -71,8 +62,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 
 </body>
 </html>
