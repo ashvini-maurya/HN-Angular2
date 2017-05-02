@@ -18,4 +18,8 @@ export class StoryComponent implements OnInit {
   					}, error => console.log('Errror in loading story' + this.storyID));
   }
 
+  // function2() {
+  //   alert("comments")
+  // }
+
 }
