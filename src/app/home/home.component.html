@@ -40,7 +40,7 @@
 
 	<div class="news-content">
 		<ol>
-			<li *ngFor="let item of items | slice:0:30">
+			<li *ngFor="let item of items | slice:(30 * this.page_number):(30 * (this.page_number + 1))">
 				<app-story storyID="{{item}}"></app-story>
 				
 				
@@ -55,7 +55,7 @@
 				<hr style="border-color: red">
 			</li>
 		</ol>
-		<a href="" class="more">More</a>
+		<a class="more" (click)="incrementPageNumber()" >More</a>
 	</div>
 
 	<!-- <p class="error" *ngIf="errorMessage">{{errorMessage}}</p> -->

@@ -12,8 +12,9 @@ import { HackernewsApiService } from '../hackernews-api.service';
 
 export class HomeComponent implements OnInit {
 	items;
+  page_number = 0;
 
-  constructor(private _hackernewsApiService: HackernewsApiService) { 
+  constructor(private _hackernewsApiService: HackernewsApiService) {
   }
 
   ngOnInit() {
@@ -24,7 +25,11 @@ export class HomeComponent implements OnInit {
   }
 
   clickMe() {
-    alert("bookmark button clicked");
+    alert(this.page_number);
+  }
+
+  incrementPageNumber(){
+    this.page_number++;
   }
 
 }
