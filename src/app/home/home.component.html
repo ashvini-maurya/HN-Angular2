@@ -21,11 +21,11 @@
 				</button>
 				<a class="navbar-brand" href="#">Hacker News</a>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
+			<!-- <div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</nav>
 
@@ -35,9 +35,9 @@
 			<li *ngFor="let item of items | slice:(30 * this.page_number):(30 * (this.page_number + 1))">
 				<app-story storyID="{{item}}"></app-story>
   				
-				<div style="float: right; margin-top: -30px; margin-right: 50px;">
+				<!-- <div style="float: right; margin-top: -30px; margin-right: 50px;">
 				  <span class="fa fa-bookmark-o" (click)="clickMe()" aria-hidden="true"></span>
-				</div>
+				</div> -->
 
 				<hr style="border-color: red">
 			</li>
